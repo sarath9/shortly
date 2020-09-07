@@ -1,0 +1,157 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  --primary: #763626;
+  --bg: #326A87;
+  --secondary: #91AFC5;
+  --dark: #2A3032;
+  --font: 'Kumbh Sans', sans-serif;
+}
+.title{
+  color: #fff;
+}
+body{
+  background: linear-gradient(60deg, var(--bg), var(--dark));
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font);
+}
+.App {
+  /* background-color: #fff; */
+  /* padding: 10px; */
+  color: #333333;
+  width: 85vw;
+  display: grid;
+  place-items: center;
+}
+
+.search{
+  background-color: var(--secondary);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.search__box{
+flex: 1;
+margin-right: 1rem;
+}
+a{
+  color: var(--primary);
+}
+a:hover{
+  color: var(--bg);
+}
+.search__box > input {
+  width: 100%;
+  line-height: 35px;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  padding: 7px;
+  color: var(--bg);
+  font-weight: bold;
+}
+.search__button > button{
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+.search__button > button:hover{
+  background: var(--bg);
+}
+.listContainer{
+  width: 100%;
+  position: relative;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+.listContainer__card{
+  background: #fff;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.text-right{
+  text-align: right !important;
+}
+.listContainer__col{
+ width: 50%;
+ text-align: left;
+ text-overflow: ellipsis;
+ overflow: hidden;
+}
+.d-flex-center{
+  display: flex;
+  align-items: center;
+}
+.content-right{
+  justify-content: flex-end;
+}
+.copy{
+  background: var(--dark);
+  padding: 5px 10px;
+  margin-left: 1rem;
+  border: 0;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.copy:hover{
+  background: var(--bg);
+}
+.noData{
+  display: flex;
+  line-height: 40px;
+  justify-content: center;
+  color: #fff;
+}
+.loading{
+  background: var(--secondary);
+  position: absolute;
+  /* animation: blink 0.8s infinite; */
+  top:0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  opacity: 0.9;
+  min-height: 50px;
+  position: relative;
+  margin-top: 5px;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+}
+.loading > img{
+  width: 100px;
+}
+@keyframes blink{
+  0%, 100%{opacity: 0.8}
+  50% {opacity: 0.9}
+}
+.loading::after{
+  content: "";
+  position: absolute;
+    color: var(--primary);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
