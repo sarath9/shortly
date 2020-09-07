@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-LIVE URL : s9-shortly.netlify.app
+LIVE URL : [https://s9-shortly.netlify.app/](https://s9-shortly.netlify.app/)
 
 
 ## Available Scripts
