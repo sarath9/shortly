@@ -28,7 +28,7 @@ function App() {
       body: BODY
     })
      const dObj = await data.json();
-     const er = await Promise.reject(new Error('yahoo'));
+    //  const er = await Promise.reject(new Error('yahoo'));
      console.log(dObj);
     setloading(false)
     setRdata([...rData, dObj]);
